@@ -1,0 +1,44 @@
+<html>
+	<head>
+		<link type="text/css" href="css/smoothness/jquery-ui-1.8.21.custom.css" rel="stylesheet" />
+		<link type="text/css" href="css/jquery.contextMenu.css" rel="stylesheet" />
+		<link type="text/css" href="fbp.css" rel="stylesheet" />
+		<script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+		<script type="text/javascript" src="js/jquery-ui-1.8.21.custom.min.js"></script>
+		<script type="text/javascript" src="js/jquery.contextMenu.js"></script>
+		<script type="text/javascript" src="js/jcanvas.js"></script>
+		<script type="text/javascript" src="js/json2.js"></script>
+		<script type="text/javascript" src="block.js"></script>
+		<script type="text/javascript" src="line.js"></script>
+		<script type="text/javascript" src="fbp.js"></script>
+		<script type="text/javascript" src="temperature.js"></script>
+		<script type="text/javascript" src="number.js"></script>
+		<script type="text/javascript" src="threshold.js"></script>
+		<script type="text/javascript" src="lightsensor.js"></script>
+		<script type="text/javascript" src="lightactuator.js"></script>
+		<script type="text/javascript" src="numericcontroller.js"></script>
+		<script type="text/javascript" src="flowlist.js"></script>
+	</head>
+	<body scrolling="no">
+		<canvas id=canvas style="position:absolute; left:0; top:50" width=2000 height=2000></canvas>
+		<div id=client></div>
+		<canvas id=canvastop style="position:absolute; left:0; top:50" width=2000 height=2000></canvas>
+		<div id=connection>
+			<table>
+				<tr><td>From</td></tr>
+				<tr>
+					<td><select id=connection_src></select></td>
+				</tr>
+				<tr><td>To</td></tr>
+				<tr>
+					<td><select id=connection_act></select></td>
+
+				</tr>
+			</table>
+		</div>
+		<div id=msg style="position:absolute;background-color:#ffff00"></div>
+		<div id=fileloader>
+			<input type=text id=fileloader_file></input>
+		</div>
+	</body>
+</html>
